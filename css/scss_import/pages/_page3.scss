@@ -1,0 +1,33 @@
+#page3{
+    input{
+        display: inline-block;
+        background: $page3-input-background;
+        outline: none;
+        padding: $page3-input-padding;
+        border: $page3-input-border;
+        border-radius: $page3-input-border-radius;
+        margin-bottom: $page3-input-margin-bottom;
+        color: $page3-input-color;
+        width: 230px;
+
+        &:nth-child(odd){
+            margin-right: 20px;
+        }
+    }
+
+    textarea{
+        display: block;
+        background: $page3-input-background;
+        outline: none;
+        padding: $page3-input-padding;
+        border: $page3-input-border;
+        border-radius: $page3-input-border-radius;
+        margin-bottom: $page3-input-margin-bottom;
+        color: $page3-input-color;
+        min-width: calc(230px + 230px + 20px);
+    }
+
+    input[type="submit"]{
+        background: $page3-sbmit-btn-background;
+    }
+}

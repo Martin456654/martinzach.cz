@@ -1,0 +1,121 @@
+.image_card{
+    width: $img-card-width;
+    height: $img-card-height;
+    position: relative;
+
+    .inside{
+        width: 100%;
+        height: 100%;
+        background: #1C1C1C;
+        background-image: linear-gradient($lin-g-from, $lin-g-to), url("../img/programming_background.jpg");
+        background-size: cover;
+        background-position: center;
+        border-top: 2px solid $site_background;
+        border-bottom: 2px solid $site_background;
+    }
+
+    .content_before_img{
+        width: 100%;
+        height: $con-bef-img-height;
+
+        position: absolute;
+        bottom: $con-bef-img-bottom;
+
+        text-align: center;
+
+        // h2{
+            
+        // }
+            
+        .typing_header::after{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 30px;
+            border-right: 2px solid $main-green;
+            animation: blink 0.5s infinite ease;
+        }
+
+        // .who_i_am_tag{
+
+        // }
+
+        .tag_spacing{
+            height: 30px;
+        }
+
+        #typed{
+            font-size: 16px;
+        }
+
+        .typed-cursor{
+            color: $main-green;
+            font-size: 22px;
+        }
+
+        .typing::after{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 19px;
+            border-right: 2px solid $main-green;
+            animation: blink 0.5s infinite ease;
+            animation-delay: 1.8s;
+        }
+
+
+        @keyframes blink{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+        .icons_social{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+
+            a{
+                color: $img-card-icon-color;
+                text-decoration: none;
+                transition: $img-card-icon-transition;
+
+                &:hover{
+                    color: $main_green;
+                }
+                
+                .social_icon{
+                    width: $img-card-icon-width;
+                    height: $img-card-icon-height;
+                    font-size: $img-card-icon-f-s;
+                
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    transition: $img-card-icon-transition;
+
+                    &:hover{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .slide_down{
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        display: none;
+    }
+}

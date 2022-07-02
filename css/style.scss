@@ -1,0 +1,89 @@
+// import other files
+@import "variables";
+
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background: $site_background;
+    color: $white !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+// SCROLL-BAR
+@import "scss_import/scroll_bar";
+
+.all_content{
+    width: 85%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    direction: ltr;
+}
+
+@import "scss_import/navigation";
+
+#page1{ display: none; }
+#page2{ display: none; }
+#page3{ display: none; }
+#page4{ display: none; }
+#page5{ display: none; }
+
+.showAll{
+    display:block !important;
+}
+
+.green{
+    color: $main_green;
+}
+
+
+// image card
+@import "scss_import/image_card";
+@import "scss_import/scroll_down";
+// @import "scss_import/menu_animation";
+
+// content of pages
+@import "scss_import/content_of_pages";
+
+// responzive code 
+@import "scss_import/responzivity";
+
+// shadows
+@import "scss_import/shadows";
+
+.missingInput{
+    animation-name: mymove;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mymove{
+    0%{
+        border-color: $main_green;
+    }
+    50%{
+        border-color: red;
+    }
+    100%{
+        border-color: $main-green;
+    }
+}

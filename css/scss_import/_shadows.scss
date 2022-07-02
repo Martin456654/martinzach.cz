@@ -1,0 +1,26 @@
+.shadows_on_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 79px;
+    padding-bottom: 80px;
+    pointer-events: none;
+    
+    .top_shadow_smooth{
+        width: 100%;
+        height: $shadows_height;
+        background: linear-gradient($shadow_lin_grad_color, transparent);
+    }
+
+    .spacing{
+        height: $spacing_between_shadows;
+    }
+    
+    .bottom_shadow_smooth{
+        width: 100%;
+        height: $shadows_height;
+        background: linear-gradient(transparent, $shadow_lin_grad_color);
+    }
+}

@@ -1,0 +1,52 @@
+.inside{
+    background: $main_grey;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    h1{
+        font-size: $conent-of-pages-h1-f-s;
+        margin-bottom: $conent-of-pages-h1-m-bottom;
+    }
+
+    .tags_about_me{
+        color: $main_green;
+        display: inline-block;
+    }
+
+    p{
+        color: $conent-of-pages-p-color;
+    }
+
+    #page1{
+        p{
+            &:last-child{
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    #site1paragraph{
+
+        a, #redirectToDovednosti, #redirectToContactMe{
+            color: lighten($conent-of-pages-p-color, 20%);
+            text-decoration: none;
+            transition: .3s;
+
+            &:hover{
+                color: $main-green;
+            }
+        }
+    }
+
+    .space_between{
+        background: $spacing_line_color;
+        width: 100%;
+        height: $conent-of-pages-spacing-line-height;
+        border-radius: 5px;
+
+        margin-top: $conent-of-pages-spacing-line-margins;
+        margin-bottom: $conent-of-pages-spacing-line-margins;
+    }
+}

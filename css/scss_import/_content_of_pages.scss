@@ -1,0 +1,36 @@
+.content_of_pages{
+    width: $content-of-pages-width;
+    height: 100%;
+    padding-top: $content-of-pages-padding;
+    padding-bottom: $content-of-pages-padding;
+    position: relative;
+
+    @import "pages/page1_and_basic_setting";
+
+    .scroll-bar-custom {
+        margin: 4px, 4px;
+        padding: 20px;
+        padding-right: 30px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align:justify;
+    }
+
+    @import "pages/page2";
+    @import "pages/page3";
+    @import "pages/page4";
+    @import "pages/page5";
+
+    .hamburger_icon_for_mobile{
+        width: $ham_icon_for_mob_width;
+        height: $ham_icon_for_mob_height;
+        position: absolute;
+        top: $ham_icon_for_mob_top;
+        right: $ham_icon_for_mob_right;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}

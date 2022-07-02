@@ -1,0 +1,41 @@
+#page2{
+    font-size: $page2-f-s;
+
+    a{
+        text-decoration: none;
+    }
+
+    #telephone{
+        color: $page2-tel-color;
+        transition: $page2-tel-transition;
+
+        .malo_dulezity{
+            color: $page2-tel-malo-dulezite;
+        }
+
+        &:hover{
+            color: $main_green;
+        }
+    }
+
+    #email{
+        transition: $page2-email-transition;
+
+        &:hover{
+            color: $main_green;
+        }
+    }
+
+    i{
+        color: $main_green;
+    }
+
+    #form_link{
+        color: $main_green;
+        transition: $page2-email-transition;
+
+        &:hover{
+            color: $page2-email-hover-color;
+        }
+    }
+}

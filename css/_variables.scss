@@ -1,0 +1,109 @@
+// all site
+    // transitions
+    $small-transition: .2s;
+    $medium-transition: .3s;
+    // colors
+    $main_green: #00A670;
+    $site_background: #111010;
+    $main_grey: #1A1B1D;
+    $white: #fff;
+    $spacing_line_color: #1D1E20;
+    $i_made_date_color: rgb(119, 119, 119);
+    $i_made_tag_color: $main_green;
+    $shadow_lin_grad_color: #141516;
+
+// navigation
+$nav-padding-top-bottom: 80px;
+
+    // menu icon
+    $ham-font-size: 30px;
+
+    // page navig
+        // icons
+        $icon-page-nav-width: 80px;
+        $icon-page-nav-height:  60px;
+        $icon-page-nav-font-size: 25px;
+    
+    // download-icon
+    $download-icon-font-size: $ham-font-size;
+    $download-icon-transition: .3s;
+    $download-icon-hover-f-s: 35px;
+
+// image card
+$img-card-width: calc(30% - 35px);
+$img-card-height: 100%;
+    // linear grad before img
+    $lin-g-from: #11101079;
+    $lin-g-to: #111010;
+    // content before img
+    $con-bef-img-height: 200px;
+    $con-bef-img-bottom: 100px;
+        // icons
+        $img-card-icon-color: $white;
+        $img-card-icon-transition: $medium-transition;
+        $img-card-icon-width: 50px;
+        $img-card-icon-height: $img-card-icon-width;
+        $img-card-icon-f-s: 20px;
+        $img-card-icon-transition: $medium-transition;
+
+// content of pages
+$content-of-pages-width: calc(70% - 35px);
+$content-of-pages-padding: $nav-padding-top-bottom;
+    // basic setting
+    $conent-of-pages-h1-f-s: 50px;
+    $conent-of-pages-h1-m-bottom: 20px;
+    $conent-of-pages-p-color: rgb(168, 168, 168);
+    $conent-of-pages-spacing-line-height: 5px;
+    $conent-of-pages-spacing-line-margins: 40px;
+
+// page 1
+
+// page 2
+$page2-f-s: 20px;
+    // telephone
+    $page2-tel-color: $white;
+    $page2-tel-transition: $small-transition;
+    $page2-tel-malo-dulezite: grey;
+    // email
+    $page2-email-transition: $small-transition;
+    // form link
+    $page2-email-transition: $medium-transition;
+    $page2-email-hover-color: $white;
+
+
+// page 3
+    // input
+    $page3-input-background: #1D1E20;
+    $page3-input-padding: 10px 15px;
+    $page3-input-border: 2px solid $main_green;
+    $page3-input-border-radius: 20px;
+    $page3-input-margin-bottom: 20px;
+    $page3-input-color: #fff;
+    $page3-sbmit-btn-background: $main_green;
+
+// page 4
+    // a link
+    $page4-a-color: #fff;
+    // ul
+        //li
+        $page4-li-margin-right: 25px;
+        $page4-li-margin-bottom: 50px;
+        $page4-li-margin-width: calc((100% - 50px) / 3);
+        $page4-li-margin-height: 200px;
+        $page4-li-border: 2px solid rgb(58, 58, 58);
+            // before and after
+            $page3-bef-aft-color: $main_green;
+            $page3-bef-aft-transition: .6s;
+
+// page 5
+$bottle-width: calc((100% - 40px) / 3);
+
+// hamburger icon for menu
+    $ham_icon_for_mob_width: 50px;
+    $ham_icon_for_mob_height: $ham_icon_for_mob_width;
+    $ham_icon_for_mob_top: 45px;
+    $ham_icon_for_mob_right: 20px;
+        
+// shadows_content
+$shadows_height: 80px;
+$spacing_between_shadows: calc(100% - #{$shadows_height} - #{$shadows_height} + 2px);

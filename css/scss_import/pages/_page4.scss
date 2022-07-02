@@ -1,0 +1,153 @@
+#page4{
+    a{
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        display: inline;
+        text-decoration: none;
+        z-index: 100;
+    }
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li{
+            display: inline-block;
+            margin-right: $page4-li-margin-right;
+            float: left;
+            margin-bottom: $page4-li-margin-bottom;
+            width: $page4-li-margin-width;
+            height: $page4-li-margin-height;
+            overflow: hidden;
+            position: relative;
+
+            border: $page4-li-border;
+
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0%;
+                height: 0%;
+                border-bottom: 3px solid transparent;
+                border-left: 3px solid transparent;
+                transition: all $page3-bef-aft-transition ease;
+                pointer-events: none;
+            }
+            
+            &::after{
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 0%;
+                height: 0%;
+                border-top: 3px solid transparent;
+                border-right: 3px solid transparent;
+                transition: all $page3-bef-aft-transition ease;
+                pointer-events: none;
+            }
+
+            
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+
+            .show_first{
+                width: 100%;
+                height: 200px;
+                transition: .3s;
+                transition-timing-function: ease-in-out;
+            }
+
+            .show_as_second{
+                padding: 15px;
+            }
+            
+            .image_of_web{
+                width: 100%;
+                height: 50%;
+                background-size: cover;
+                background-position: center;
+                transition: .3s;
+                transition-timing-function: ease-in-out;
+            }
+
+            .image_of_web_jevalka{
+                background-image: url("../img/nahledak/jevalka.png");
+            }
+            
+            .image_of_web_desetiminutovka{
+                background-image: url("../img/nahledak/desetiminutovka.png");
+            }
+            
+            .image_of_web_streets4kids{
+                background-image: url("../img/nahledak/streets4kids.png");
+            }
+            
+            .image_of_web_schoolmichael{
+                background-image: url("../img/nahledak/schoolmichael.jpg");
+            }
+            
+            .image_of_web_modpol{
+                background-image: url("../img/nahledak/modpol.jpg");
+            }
+            
+            .image_of_web_martinzach{
+                background-image: url("../img/nahledak/martinzach.jpg");
+            }
+            
+            .image_of_web_martinzach_blog{
+                background-image: url("../img/nahledak/martinzach_blog.jpg");
+            }
+            
+            .content_in_nahledak{
+                padding: 10px 15px;
+                
+                h2{
+                    margin-top: 0;
+                    margin-bottom: 7px;
+                    transition: .3s;
+                    transition-timing-function: ease-in-out;
+                }
+
+                .i_made{
+                    color: $i_made_tag_color;
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                .date{
+                    color: $i_made_date_color;
+                }
+            }
+
+            &:hover{
+
+                .image_of_web{
+                    height: 0;
+                }
+
+                .show_first{
+                    height: 50%;
+                }
+
+                .content_in_nahledak{
+                    h2{
+                        color: $main_green;
+                    }
+                }
+
+                &::before,
+                &::after{
+                    border-color: $page3-bef-aft-color;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

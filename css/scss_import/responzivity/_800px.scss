@@ -1,0 +1,277 @@
+@media only screen and(max-width: 800px){
+    body{
+        ::-webkit-scrollbar {
+            width: 6px;
+            background: $main_grey;
+        }
+        
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            // background-color: #ffffff;
+            background-color: $main_grey;
+            border-radius: 5px;
+        }
+    }
+
+    .body{
+        display: block;
+        all: unset;
+        width: 100%;
+    }
+    
+    .all_content{
+        all: unset;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .image_card{
+        width: 100vw;
+        height: 100vh;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        .content_before_img{
+            bottom: 21.5%; // 190px - 880px
+            
+            h2{
+                font-size: 45px;
+                margin-bottom: 20px;
+            }
+            
+            .typing_header::after{
+                height: 50px;
+                border-right: 4px solid $main-green;
+            }
+    
+            .who_i_am_tag{
+                font-size: 20px;
+                color: $main_green;
+                margin-bottom: 20px;
+            }
+
+            .typing::after{
+                border-right: 3px solid #fff;
+            }
+    
+            .icons_social{
+                margin-top: 10px;
+    
+                a{
+                    color: $white;
+                    text-decoration: none;
+                    transition: .2s;
+    
+                    &:hover{
+                        color: $main_green;
+                    }
+                }
+            }
+        }
+
+        .slide_down{
+            display: inline-block;
+            bottom: 11.3%; // 100px - 880px
+        }
+    }
+
+    .content_of_pages{
+        width: 100vw;
+        min-height: 100vh;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        .scroll-bar-custom {
+            padding: 20px;
+        }
+
+        .inside{
+            min-height: 100vh;
+            
+            .tags_about_me{
+                padding-top: 10px;
+            }
+                
+
+            #page2{
+                // a{
+                //     // text-decoration: none;
+                // }
+        
+                #telephone{
+                    font-size: 22px;
+        
+                    .malo_dulezity{
+                        font-size: 22px;
+                    }
+                }
+        
+                #email{
+                    font-size: 22px;
+                }
+
+                iframe{
+                    height: 60vh;
+                }
+            }
+
+            #page3{
+                input{
+                    width: 100%;
+                    font-size: 20px;
+                    
+                    &:nth-child(1){
+                        margin-top: 40px;
+                    }
+                    
+                    // &:autofill{
+                        //     background: red;
+                        // }
+                }
+                    
+                #input_without_margin{
+                    margin-top: 0 !important;
+                }
+
+                textarea{
+                    width: 100%;
+                    height: 40%;
+                    font-size: 20px;
+                }
+            
+                input[type="submit"]{
+                    background: $main_green;
+                }
+            
+            }
+
+            #page4{
+                h1{
+                    margin-bottom: 40px;
+                }
+            
+                ul{
+                    li{
+                        width: 100%;
+                        height: 300px;
+                        transition: .3s;
+                        
+                        &::before,
+                        &::after{
+                            border-color: $main_green;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        .content_in_nahledak{
+                            h2{
+                                color: $main_green;
+                            }
+                        }
+
+                        &:hover{
+
+                            .image_of_web{
+                               height: 50%;
+                            }
+
+                            .show_first{
+                                height: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #page5{
+                .row{ 
+                    display: flex;
+                    flex-direction: row;
+            
+                    .bottle-spacing{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+        
+    
+    .shadows_on_content{
+        display: none;
+    }
+    
+    .hamburger_icon_for_mobile{
+        transition: .5s;
+
+        // nastavení ve style.scss -> content_of_pages.scss
+
+        i{
+            display: block;
+            font-size: 50px;
+            transition: .2s;
+        }
+
+        &:active i{
+            color: $main_green;
+        }
+    }
+
+    #menu_mobile_icon2{
+        color: $main_green;
+        top: 25px;
+    }
+        
+    .mobile_menu_all_screen{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background: $site_background;
+        position: fixed;
+        top: 0;
+        left: 0;
+        left: 100%;
+        transition: .5s;
+
+        .page-navigation-mobile{
+            .icon-page-navigation{
+                border-bottom: 3px solid $main_green;
+                width: 100%;
+                height: calc(100px);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                font-size: 25px;
+
+                .icons-in-mobile-menu{
+                    padding-right: 15px;
+                    color: $main_green;
+                }
+            }
+        }
+
+    }
+
+    .leftIsZero{
+        left: 0;
+    }
+}
+
+@media only screen and(min-width: 800px){
+    .hamburger_icon_for_mobile{
+        i{
+            display: none;
+        }
+    }
+
+    .mobile_menu_all_screen{
+        display: none;
+    }
+}
