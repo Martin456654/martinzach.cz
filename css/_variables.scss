@@ -32,9 +32,6 @@ $nav-padding-top-bottom: 80px;
 // image card
 $img-card-width: calc(30% - 35px);
 $img-card-height: 100%;
-    // linear grad before img
-    $lin-g-from: #11101079;
-    $lin-g-to: #111010;
     // content before img
     $con-bef-img-height: 200px;
     $con-bef-img-bottom: 100px;
@@ -73,13 +70,12 @@ $page2-f-s: 20px;
 
 // page 3
     // input
-    $page3-input-background: #1D1E20;
-    $page3-input-padding: 10px 15px;
-    $page3-input-border: 2px solid $main_green;
-    $page3-input-border-radius: 20px;
-    $page3-input-margin-bottom: 20px;
-    $page3-input-color: #fff;
-    $page3-sbmit-btn-background: $main_green;
+    $input-background: #1D1E20;
+    $input-padding: 10px 15px;
+    $input-border: 2px solid $main_green;
+    $input-border-radius: 10px;
+    $input-margin-bottom: 20px;
+    $input-color: #fff;
 
 // page 4
     // a link

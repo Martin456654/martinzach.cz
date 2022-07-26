@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 .inside{
     background: $main_grey;
     width: 100%;
@@ -19,25 +23,24 @@
         color: $conent-of-pages-p-color;
     }
 
-    #page1{
-        p{
-            &:last-child{
-                margin-bottom: 50px;
-            }
-        }
-    }
+    // #page1{
+    //     p{
+    //         &:last-child{
+    //             margin-bottom: 50px;
+    //         }
+    //     }
+    // }
 
     #site1paragraph{
+        // a, #redirectToDovednosti, #redirectToContactMe{
+        //     color: lighten($conent-of-pages-p-color, 20%);
+        //     text-decoration: none;
+        //     transition: .3s;
 
-        a, #redirectToDovednosti, #redirectToContactMe{
-            color: lighten($conent-of-pages-p-color, 20%);
-            text-decoration: none;
-            transition: .3s;
-
-            &:hover{
-                color: $main-green;
-            }
-        }
+        //     &:hover{
+        //         color: $main-green;
+        //     }
+        // }
     }
 
     .space_between{

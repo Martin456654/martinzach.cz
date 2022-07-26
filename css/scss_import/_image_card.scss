@@ -7,11 +7,14 @@
         width: 100%;
         height: 100%;
         background: #1C1C1C;
-        background-image: linear-gradient($lin-g-from, $lin-g-to), url("../img/programming_background.jpg");
+        // background-image: linear-gradient($lin-g-from, $lin-g-to), url("../img/programming_background.jpg");
+        background-image: 
+            linear-gradient(transparent, rgb(17, 16, 16)),
+            url("../img/me.jpg");
         background-size: cover;
         background-position: center;
         border-top: 2px solid $site_background;
-        border-bottom: 2px solid $site_background;
+        border-bottom: 4px solid $site_background;
     }
 
     .content_before_img{

@@ -1,25 +1,13 @@
 #page2{
     font-size: $page2-f-s;
 
-    a{
-        text-decoration: none;
-    }
-
-    #telephone{
+    .contact-icon{
         color: $page2-tel-color;
         transition: $page2-tel-transition;
 
         .malo_dulezity{
             color: $page2-tel-malo-dulezite;
         }
-
-        &:hover{
-            color: $main_green;
-        }
-    }
-
-    #email{
-        transition: $page2-email-transition;
 
         &:hover{
             color: $main_green;
@@ -37,5 +25,13 @@
         &:hover{
             color: $page2-email-hover-color;
         }
+    }
+
+    iframe{
+        filter: invert(90%);
+        width: 100%;
+        height: 450px;
+        border: none;
+        box-shadow: none;
     }
 }

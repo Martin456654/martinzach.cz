@@ -36,6 +36,14 @@
         padding-top: 0px;
         padding-bottom: 0px;
 
+        
+        .inside{
+            border-bottom: none;
+            background-image: 
+                linear-gradient(transparent, rgb(26, 27, 29)),
+                url("../img/me.jpg");
+        }
+
         .content_before_img{
             bottom: 21.5%; // 190px - 880px
             

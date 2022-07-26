@@ -10,9 +10,6 @@ html {
 
 body {
   overflow-x: hidden;
-}
-
-.body {
   min-width: 100vw;
   min-height: 100vh;
   background: #111010;
@@ -78,25 +75,6 @@ body {
   height: 100%;
 }
 
-.navigation .inside .hamburger-menu {
-  width: 100%;
-  height: 80px;
-  background: #00A670;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.navigation .inside .hamburger-menu i {
-  font-size: 30px;
-}
-
 .navigation .inside .page-navigation {
   width: 100%;
   height: calc(100% - 80px - 80px);
@@ -107,16 +85,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 10%;
 }
 
 .navigation .inside .page-navigation .icon-page-navigation {
   width: 80px;
-  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,6 +106,7 @@ body {
 
 .navigation .inside .page-navigation .icon-page-navigation i {
   font-size: 25px;
+  pointer-events: none;
 }
 
 .navigation .inside a {
@@ -137,7 +114,7 @@ body {
   text-decoration: none;
 }
 
-.navigation .inside .download-icon {
+.navigation .inside .highlight-icon {
   width: 80px;
   height: 80px;
   background: #00A670;
@@ -152,14 +129,18 @@ body {
           justify-content: center;
 }
 
-.navigation .inside .download-icon i {
+.navigation .inside .highlight-icon i {
   font-size: 30px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
-.navigation .inside .download-icon i:hover {
-  font-size: 35px;
+.navigation .inside .highlight-icon img {
+  width: 55px;
+}
+
+@media only screen and (max-height: 730px) {
+  .page-navigation {
+    gap: 5%;
+  }
 }
 
 #page1 {
@@ -200,12 +181,12 @@ body {
   width: 100%;
   height: 100%;
   background: #1C1C1C;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#11101079), to(#111010)), url("../img/programming_background.jpg");
-  background-image: linear-gradient(#11101079, #111010), url("../img/programming_background.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#111010)), url("../img/me.jpg");
+  background-image: linear-gradient(transparent, #111010), url("../img/me.jpg");
   background-size: cover;
   background-position: center;
   border-top: 2px solid #111010;
-  border-bottom: 2px solid #111010;
+  border-bottom: 4px solid #111010;
 }
 
 .image_card .content_before_img {
@@ -408,6 +389,10 @@ body {
   position: relative;
 }
 
+.content_of_pages a {
+  text-decoration: none;
+}
+
 .content_of_pages .inside {
   background: #1A1B1D;
   width: 100%;
@@ -428,21 +413,6 @@ body {
 
 .content_of_pages .inside p {
   color: #a8a8a8;
-}
-
-.content_of_pages .inside #page1 p:last-child {
-  margin-bottom: 50px;
-}
-
-.content_of_pages .inside #site1paragraph a, .content_of_pages .inside #site1paragraph #redirectToDovednosti, .content_of_pages .inside #site1paragraph #redirectToContactMe {
-  color: #dbdbdb;
-  text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.content_of_pages .inside #site1paragraph a:hover, .content_of_pages .inside #site1paragraph #redirectToDovednosti:hover, .content_of_pages .inside #site1paragraph #redirectToContactMe:hover {
-  color: #00A670;
 }
 
 .content_of_pages .inside .space_between {
@@ -467,30 +437,17 @@ body {
   font-size: 20px;
 }
 
-.content_of_pages #page2 a {
-  text-decoration: none;
-}
-
-.content_of_pages #page2 #telephone {
+.content_of_pages #page2 .contact-icon {
   color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.content_of_pages #page2 #telephone .malo_dulezity {
+.content_of_pages #page2 .contact-icon .malo_dulezity {
   color: grey;
 }
 
-.content_of_pages #page2 #telephone:hover {
-  color: #00A670;
-}
-
-.content_of_pages #page2 #email {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.content_of_pages #page2 #email:hover {
+.content_of_pages #page2 .contact-icon:hover {
   color: #00A670;
 }
 
@@ -508,36 +465,58 @@ body {
   color: #fff;
 }
 
-.content_of_pages #page3 input {
+.content_of_pages #page2 iframe {
+  -webkit-filter: invert(90%);
+          filter: invert(90%);
+  width: 100%;
+  height: 450px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.content_of_pages #page3 form {
+  max-width: 500px;
+}
+
+.content_of_pages #page3 form .form_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.content_of_pages #page3 form input {
   display: inline-block;
   background: #1D1E20;
   outline: none;
   padding: 10px 15px;
   border: 2px solid #00A670;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-bottom: 20px;
   color: #fff;
-  width: 230px;
+  width: 100%;
 }
 
-.content_of_pages #page3 input:nth-child(odd) {
-  margin-right: 20px;
-}
-
-.content_of_pages #page3 textarea {
+.content_of_pages #page3 form textarea {
   display: block;
   background: #1D1E20;
   outline: none;
   padding: 10px 15px;
   border: 2px solid #00A670;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-bottom: 20px;
   color: #fff;
-  min-width: calc(230px + 230px + 20px);
+  width: 100%;
 }
 
-.content_of_pages #page3 input[type="submit"] {
+.content_of_pages #page3 form input[type="submit"] {
   background: #00A670;
+}
+
+.content_of_pages #page3 form .disabled {
+  opacity: .5;
+  pointer-events: none;
 }
 
 .content_of_pages #page4 a {
@@ -833,6 +812,11 @@ body {
     height: 100vh;
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+  .image_card .inside {
+    border-bottom: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#1a1b1d)), url("../img/me.jpg");
+    background-image: linear-gradient(transparent, #1a1b1d), url("../img/me.jpg");
   }
   .image_card .content_before_img {
     bottom: 21.5%;
