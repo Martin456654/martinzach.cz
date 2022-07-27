@@ -37,15 +37,16 @@ body{
 }
 
 @import "scss_import/navigation";
+@import "scss_import/mobile_navigation";
 
-#page1{ display: none; }
-#page2{ display: none; }
-#page3{ display: none; }
-#page4{ display: none; }
-#page5{ display: none; }
+.page{ display: none; }
+.page{ display: none; }
+.page{ display: none; }
+.page{ display: none; }
+.page{ display: none; }
 
 .showAll{
-    display:block !important;
+    display: block !important;
 }
 
 .green{

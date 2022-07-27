@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="knockout_app">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,9 @@
 
     <!-- meta tags SEO -->
     <meta charset="UTF-8">
-    <meta name="description" content="Ahoj, jmenuji se Martin Zach a jsem začínající Front-End Web Developer.">
-    <meta name="keywords" content="Martin, Zach, Web, Developer, Front End, web">
+    <meta name="description" content="Jsem Martin Zach a jsem Junior Web Developer.">
+    <meta name="keywords" content="Martin, Zach, Web, Developer, Front End, web, PHP, JS, HTML, CSS, vývojář, IT, programátor
+                                    mnichovice">
     <meta name="author" content="Martin Zach">
     <meta name="og:image" content="https://www.martinzach.cz/img/blabla.jpg">
 

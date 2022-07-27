@@ -143,23 +143,43 @@ body {
   }
 }
 
-#page1 {
+.mobile_navigation {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
   display: none;
 }
 
-#page2 {
+.mobile_navigation .inside {
+  width: 100%;
+  background: #1A1B1D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px 8%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page {
   display: none;
 }
 
-#page3 {
+.page {
   display: none;
 }
 
-#page4 {
+.page {
   display: none;
 }
 
-#page5 {
+.page {
+  display: none;
+}
+
+.page {
   display: none;
 }
 
@@ -806,6 +826,9 @@ body {
   }
   .navigation {
     display: none;
+  }
+  .mobile_navigation {
+    display: block;
   }
   .image_card {
     width: 100vw;
